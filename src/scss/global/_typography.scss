@@ -1,2 +1,36 @@
 @use './functions' as * ;
 
+@font-face {
+    font-display: swap;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/rubik-v28-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/rubik-v28-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/rubik-v28-latin-500.woff2') format('woff2');
+}
+
+:root {
+    --ff-primary: 'Rubik', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    --fs-user-tab-desk: #{fluid(24, 40, 768, 1440)};
+    --fs-current-hrs-mob-tab: #{fluid(32, 56, 375, 768)};
+    --fs-previous-hrs: #{rem(15)};
+    --fs-body: #{rem(18)};
+    --fw-1: 300;
+    --fw-2: 400;
+    --fw-3: 500;
+}
