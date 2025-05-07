@@ -26,10 +26,11 @@
 
 :root {
     --ff-primary: 'Rubik', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    --fs-user-tab-desk: #{fluid(24, 40, 768, 1440)};
-    --fs-current-hrs-mob-tab: #{fluid(32, 56, 375, 768)};
-    --fs-previous-hrs: #{rem(15)};
+    --fs-user-tab-desk: #{fluid(24, 40, 768, 1440, rem)};
+    --fs-current-hrs-mob-tab: #{fluid(32, 56, 375, 768, rem)};
     --fs-body: #{rem(18)};
+    --fs-previous-hrs: #{rem(15)};
+    --fs-report: #{rem(15)};
     --fw-1: 300;
     --fw-2: 400;
     --fw-3: 500;

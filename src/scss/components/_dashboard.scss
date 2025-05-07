@@ -1,2 +1,221 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.body {
+    min-block-size: 100vh;
+}
+
+.page-wrapper {
+    inline-size: 100%;
+    max-inline-size: rem(1650);
+}
+
+.main {
+    padding-inline: fluid(24, 78, 375, 768);
+    padding-block: fluid(81, 173, 375, 768);
+}
+
+.dashboard {
+
+    &__profile {
+        background-color: var(--clr-cards-bg);
+        border-radius: rem(15);
+        grid-area: profile;
+    }
+
+    &__profile-header {
+        padding: 32px;
+        background-color: var(--clr-user-bg);
+        border-radius: rem(15);
+    }
+
+    &__profile-avatar {
+        border: rem(3) solid var(--clr-light);
+        border-radius: 50%;
+        inline-size: rem(64);
+        block-size: rem(64);
+    }
+
+    &__profile-label {
+        font-size: var(--fs-report);
+        font-weight: var(--fw-2);
+        color: var(--clr-report);
+    }
+
+    &__profile-name {
+        font-size: var(--fs-user-tab-desk);
+        font-weight: var(--fw-1);
+    }
+
+    &__tabs {
+        padding-block-end: 25px;
+        padding-inline-start: 36px;
+        padding-inline-end: 24px;
+    }
+
+    &__tab {
+        background-color: transparent;
+        border: none;
+        color: var(--clr-btn);
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+// helper class for the active tab
+    &__tab--active {
+        color: var(--clr-light);
+    }
+
+    &__card--work {
+        grid-area: work;
+    }
+
+    &__card--play {
+        grid-area: play;
+    }
+
+    &__card--study {
+        grid-area: study;
+    }
+
+    &__card--exercise {
+        grid-area: exercise;
+    }
+
+    &__card--social {
+        grid-area: social;
+    }
+
+    &__card--self-care {
+        grid-area: self;
+    }
+
+    &__card {
+        border-radius: rem(15);
+        overflow: clip;
+    }
+
+    &__card-decor--work {
+        background-color: var(--clr-work);
+    }
+
+    &__card-decor--play {
+        background-color: var(--clr-play);
+    }
+
+    &__card-decor--study {
+        background-color: var(--clr-study);
+    }
+
+    &__card-decor--exercise {
+        background-color: var(--clr-exercise);
+    }
+
+    &__card-decor--social {
+        background-color: var(--clr-social);
+    }
+
+    &__card-decor--self-care {
+        background-color: var(--clr-self-c);
+    }
+
+    &__card-icon--work {
+        inline-size: rem(79);
+        block-size: rem(79);
+        margin-inline-end: 17px;
+        margin-block-start: -11px;
+    }
+
+    &__card-icon--play {
+        inline-size: rem(79);
+        block-size: rem(80);
+        margin-inline-end: 17px;
+        margin-block-start: -5px;
+    }
+
+    &__card-icon--study {
+        inline-size: rem(79);
+        block-size: rem(79);
+        margin-inline-end: 17px;
+        margin-block-start: -6px;
+    }
+
+    &__card-icon--exercise {
+        inline-size: rem(81);
+        block-size: rem(55);
+        margin-inline-end: 17px;
+    }
+
+    &__card-icon--social {
+        inline-size: rem(75);
+        block-size: rem(100);
+        margin-inline-end: 17px;
+        margin-block-start: -14px;
+    }
+    
+    &__card-icon--self-care {
+        inline-size: rem(67);
+        block-size: rem(67);
+        margin-inline-end: 17px;
+        margin-block-start: -11px;
+    }
+
+    &__card-content {
+        background-color: var(--clr-cards-bg);
+        padding-inline: 24px;
+        padding-block: 27.5px;
+        border-radius: rem(15);
+        position: relative;
+        z-index: 1;
+    }
+    
+    &__card-content--work {
+        margin-block-start: -27.7px;
+    }
+
+    &__card-content--play {
+        margin-block-start: -36px;
+    }
+
+    &__card-content--study {
+        margin-block-start: -33px;
+    }
+
+    &__card-content--exercise {
+        margin-block-start: -16px;
+    }
+
+    &__card-content--social {
+        margin-block-start: -47px;
+    }
+
+    &__card-content--self-care {
+        margin-block-start: -18px;
+    }
+
+    &__card-title {
+        font-size: var(--fs-body);
+    }
+
+    &__card-option-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__card-option-icon {
+        inline-size: rem(21);
+        block-size: rem(5);
+    }
+
+    &__card-hrs-current {
+        font-size: var(--fs-current-hrs-mob-tab);
+        font-weight: var(--fw-1);
+    }
+
+    &__card-hrs-previous {
+        font-size: var(--fs-previous-hrs);
+        font-weight: var(--fw-2);
+        color: var(--clr-previous-hrs);
+    }
+}

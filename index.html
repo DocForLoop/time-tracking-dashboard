@@ -25,155 +25,182 @@
 
     <script type="module" src="src/main.ts"></script>
   </head>
-  <body>
-    <div>
-      <main>
-        <section aria-label="User profile and activity report">
-          <section aria-labelledby="user-profile">
-            <div>
-              <img src="/src/assets/images/image-jeremy.png" alt="" width="64" height="64">
+  <body class="body">
+    <div class="page-wrapper">
+      <main class="main">
+        <section class="dashboard" aria-label="User profile and activity report">
 
-              <h2 id="user-profile">
-                <span>Report for</span>
-                <span>Jeremy Robson</span>
+          <section class="dashboard__profile" aria-labelledby="user-profile">
+            <div class="dashboard__profile-header">
+              <img class="dashboard__profile-avatar" 
+                  src="/src/assets/images/image-jeremy.png" 
+                  alt="" width="64" height="64">
+
+              <h2 class="dashboard__profile-title" id="user-profile">
+                <span class="dashboard__profile-label">Report for</span>
+                <span class="dashboard__profile-name">Jeremy Robson</span>
               </h2>
             </div>
 
-            <ul role="tablist" aria-label="Time period selection">
+            <ul class="dashboard__tabs" role="tablist" aria-label="Time period selection">
               <li role="none">
-                <button role="tab" aria-selected="false">Daily</button>
+                <button class="dashboard__tab" role="tab" aria-selected="false">Daily</button>
               </li>
               <li role="none">
-                <button role="tab" aria-selected="true">Weekly</button>
+                <button class="dashboard__tab dashboard__tab--active" role="tab" aria-selected="true">Weekly</button>
               </li>
               <li role="none">
-                <button role="tab" aria-selected="false">Monthly</button>
+                <button class="dashboard__tab" role="tab" aria-selected="false">Monthly</button>
               </li>
             </ul>
           </section>
 
-          <article aria-labelledby="work-card-title">
-            <div>
-              <img src="/src/assets/images/icon-work.svg" alt="" width="79" height="79">
+          <article class="dashboard__card dashboard__card--work" aria-labelledby="work-card-title">
+            <div class="dashboard__card-decor dashboard__card-decor--work">
+              <img class="dashboard__card-icon dashboard__card-icon--work" 
+                  src="/src/assets/images/icon-work.svg" 
+                  alt="" width="79" height="79">
             </div>
 
-            <div>
-              <div>
-                <h2 id="work-card-title">Work</h2>
+            <div class="dashboard__card-content dashboard__card-content--work">
+              <div class="dashboard__card-header">
+                <h2 class="dashboard__card-title" id="work-card-title">Work</h2>
                 
-                <button aria-label="More options">
-                  <img src="/src/assets/images/icon-ellipsis.svg" alt="" width="12" height="4">
+                <button class="dashboard__card-option-btn" aria-label="More options">
+                  <img class="dashboard__card-option-icon" 
+                      src="/src/assets/images/icon-ellipsis.svg" 
+                      alt="" width="21" height="5">
                 </button>
               </div>
 
-              <div>
-                <p aria-live="polite"></p>
-                <p aria-live="polite"></p>
+              <div class="dashboard__card-data">
+                <p class="dashboard__card-hrs-current" aria-live="polite">32hrs</p>
+                <p class="dashboard__card-hrs-previous" aria-live="polite">Last Week - 36hrs</p>
               </div>
             </div>
           </article>
 
-          <article aria-labelledby="play-card-title">
-            <div>
-              <img src="/src/assets/images/icon-play.svg" alt="" width="76" height="77">
+          <article class="dashboard__card dashboard__card--play" aria-labelledby="play-card-title">
+            <div class="dashboard__card-decor dashboard__card-decor--play">
+              <img class="dashboard__card-icon dashboard__card-icon--play" 
+                  src="/src/assets/images/icon-play.svg" 
+                  alt="" width="79" height="80">
             </div>
 
-            <div>
-              <div>
-                <h2 id="play-card-title">Play</h2>
+            <div class="dashboard__card-content dashboard__card-content--play">
+              <div class="dashboard__card-header">
+                <h2 class="dashboard__card-title" id="play-card-title">Play</h2>
 
-                <button aria-label="More options">
-                  <img src="/src/assets/images/icon-ellipsis.svg" alt="" width="12" height="4">
+                <button class="dashboard__card-option-btn" aria-label="More options">
+                  <img class="dashboard__card-option-icon" 
+                      src="/src/assets/images/icon-ellipsis.svg" 
+                      alt="" width="21" height="5">
                 </button>
               </div>
 
-              <div>
-                <p aria-live="polite"></p>
-                <p aria-live="polite"></p>
+              <div class="dashboard__card-data">
+                <p class="dashboard__card-hrs-current" aria-live="polite"></p>
+                <p class="dashboard__card-hrs-previous" aria-live="polite"></p>
               </div>
             </div>
           </article>
 
-          <article aria-labelledby="study-card-title">
-            <div>
-              <img src="/src/assets/images/icon-study.svg" alt="" width="79" height="79">
+          <article class="dashboard__card dashboard__card--study" aria-labelledby="study-card-title">
+            <div class="dashboard__card-decor dashboard__card-decor--study">
+              <img class="dashboard__card-icon dashboard__card-icon--study" 
+              src="/src/assets/images/icon-study.svg" 
+              alt="" width="79" height="79">
             </div>
 
-            <div>
-              <div>
-                <h2 id="study-card-title">Study</h2>
+            <div class="dashboard__card-content dashboard__card-content--study">
+              <div class="dashboard__card-header">
+                <h2 class="dashboard__card-title" id="study-card-title">Study</h2>
 
-                <button aria-label="More options">
-                  <img src="/src/assets/images/icon-ellipsis.svg" alt="" width="12" height="4">
+                <button class="dashboard__card-option-btn" aria-label="More options">
+                  <img class="dashboard__card-option-icon" 
+                      src="/src/assets/images/icon-ellipsis.svg" 
+                      alt="" width="21" height="5">
                 </button>
               </div>
 
-              <div>
-                <p aria-live="polite"></p>
-                <p aria-live="polite"></p>
+              <div class="dashboard__card-data">
+                <p class="dashboard__card-hrs-current" aria-live="polite"></p>
+                <p class="dashboard__card-hrs-previous" aria-live="polite"></p>
               </div>
             </div>
           </article>
 
-          <article aria-labelledby="exercise-card-title">
-            <div>
-              <img src="/src/assets/images/icon-exercise.svg" alt="" width="81" height="55">
+          <article class="dashboard__card dashboard__card--exercise" aria-labelledby="exercise-card-title">
+            <div class="dashboard__card-decor dashboard__card-decor--exercise">
+              <img class="dashboard__card-icon dashboard__card-icon--exercise" 
+                src="/src/assets/images/icon-exercise.svg" 
+                alt="" width="81" height="55">
             </div>
 
-            <div>
-              <div>
-                <h2 id="exercise-card-title">Exercise</h2>
+            <div class="dashboard__card-content dashboard__card-content--exercise">
+              <div class="dashboard__card-header">
+                <h2 class="dashboard__card-title" id="exercise-card-title">Exercise</h2>
 
-                <button aria-label="More options">
-                  <img src="/src/assets/images/icon-ellipsis.svg" alt="" width="12" height="4">
+                <button class="dashboard__card-option-btn" aria-label="More options">
+                  <img class="dashboard__card-option-icon" 
+                      src="/src/assets/images/icon-ellipsis.svg" 
+                      alt="" width="21" height="5">
                 </button>
               </div>
 
-              <div>
-                <p aria-live="polite"></p>
-                <p aria-live="polite"></p>
+              <div class="dashboard__card-data">
+                <p class="dashboard__card-hrs-current" aria-live="polite"></p>
+                <p class="dashboard__card-hrs-previous" aria-live="polite"></p>
               </div>
             </div>
           </article>
 
-          <article aria-labelledby="social-card-title">
-            <div>
-              <img src="/src/assets/images/icon-social.svg" alt="" width="75" height="100">
+          <article class="dashboard__card dashboard__card--social" aria-labelledby="social-card-title">
+            <div class="dashboard__card-decor dashboard__card-decor--social">
+              <img class="dashboard__card-icon dashboard__card-icon--social" 
+                  src="/src/assets/images/icon-social.svg" 
+                  alt="" width="75" height="100">
             </div>
 
-            <div>
-              <div>
-                <h2 id="social-card-title">Social</h2>
+            <div class="dashboard__card-content dashboard__card-content--social">
+              <div class="dashboard__card-header">
+                <h2 class="dashboard__card-title" id="social-card-title">Social</h2>
 
-                <button aria-label="More options">
-                  <img src="/src/assets/images/icon-ellipsis.svg" alt="" width="12" height="4">
+                <button class="dashboard__card-option-btn" aria-label="More options">
+                  <img class="dashboard__card-option-icon" 
+                      src="/src/assets/images/icon-ellipsis.svg" 
+                      alt="" width="21" height="5">
                 </button>
               </div>
 
-              <div>
-                <p aria-live="polite"></p>
-                <p aria-live="polite"></p>
+              <div class="dashboard__card-data">
+                <p class="dashboard__card-hrs-current" aria-live="polite"></p>
+                <p class="dashboard__card-hrs-previous" aria-live="polite"></p>
               </div>
             </div>
           </article>
 
-          <article aria-labelledby="self-care-card-title">
-            <div>
-              <img src="/src/assets/images/icon-self-care.svg" alt="" width="67" height="67">
+          <article class="dashboard__card dashboard__card--self-care" aria-labelledby="self-care-card-title">
+            <div class="dashboard__card-decor dashboard__card-decor--self-care">
+              <img class="dashboard__card-icon dashboard__card-icon--self-care" 
+                  src="/src/assets/images/icon-self-care.svg" 
+                  alt="" width="67" height="67">
             </div>
 
-            <div>
-              <div>
-                <h2 id="self-care-card-title">Self Care</h2>
+            <div class="dashboard__card-content dashboard__card-content--self-care">
+              <div class="dashboard__card-header">
+                <h2 class="dashboard__card-title" id="self-care-card-title">Self Care</h2>
 
-                <button aria-label="More options">
-                  <img src="/src/assets/images/icon-ellipsis.svg" alt="" width="12" height="4">
+                <button class="dashboard__card-option-btn" aria-label="More options">
+                  <img class="dashboard__card-option-icon" 
+                      src="/src/assets/images/icon-ellipsis.svg" 
+                      alt="" width="21" height="5">
                 </button>
               </div>
 
-              <div>
-                <p aria-live="polite"></p>
-                <p aria-live="polite"></p>
+              <div class="dashboard__card-data">
+                <p class="dashboard__card-hrs-current" aria-live="polite"></p>
+                <p class="dashboard__card-hrs-previous" aria-live="polite"></p>
               </div>
             </div>
           </article>

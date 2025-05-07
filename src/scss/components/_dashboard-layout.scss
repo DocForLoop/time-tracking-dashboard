@@ -1,1 +1,77 @@
 @use '@scss/global/functions' as *;
+
+.body {
+    display: grid;
+    place-items: center;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: grid;
+}
+
+.dashboard {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: rem(203);
+    grid-auto-rows: rem(160);
+    row-gap: 24px;
+    grid-template-areas:
+    "profile"
+    "work"
+    "play"
+    "study"
+    "exercise"
+    "social"
+    "self";
+
+    &__profile {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__profile-header {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+    }
+
+    &__profile-title {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        column-gap: fluid(24, 68, 320, 768);
+    }
+
+    &__card-decor {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__card-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
