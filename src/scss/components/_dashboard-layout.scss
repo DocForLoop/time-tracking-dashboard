@@ -19,7 +19,7 @@
     grid-auto-columns: 1fr;
     grid-template-rows: rem(203);
     grid-auto-rows: rem(160);
-    row-gap: 24px;
+    gap: 24px;
     grid-template-areas:
     "profile"
     "work"
