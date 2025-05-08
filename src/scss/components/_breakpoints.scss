@@ -1,7 +1,7 @@
 @use '@scss/global/functions' as *;
 
 @media (width > em(767.5)) {
-    
+
     .dashboard {
         grid-auto-rows: rem(213);
         gap: fluid(24, 32, 768, 1440);
@@ -96,6 +96,108 @@
             flex-direction: column;
             row-gap: 8px;
             align-items: flex-start;
+        }
+    }
+}
+
+@media (width > em(1280)) {
+
+    .main {
+        place-items: center;
+    }
+
+    .dashboard {
+        max-inline-size: rem(1116);
+        max-block-size: rem(520);
+        grid-template-rows: rem(244);
+        grid-auto-rows: unset;
+        grid-template-areas:
+        "profile work play study"
+        "profile exercise social self";
+
+        &__profile {
+            max-inline-size: rem(255);
+            row-gap: 28px;
+        }
+
+        &__profile-header {
+            padding-inline-end: 85px;
+            padding-block-end: 92px;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 40px;
+        }
+
+        &__profile-title {
+            row-gap: 0;
+        }
+
+        &__tabs {
+            padding-block-end: 32px;
+            padding-inline-start: 32px;
+            padding-inline-end: 24px;
+            flex-direction: column;
+            row-gap: 21px;
+        }
+
+        &__profile-avatar {
+            inline-size: rem(78);
+            block-size: rem(78);
+        }
+
+        &__card-decor {
+            block-size: rem(63);
+        }
+
+        &__card-icon--work {
+            inline-size: rem(79);
+            block-size: rem(79);
+            margin-inline-end: 17px;
+            margin-block-start: -11px;
+        }
+    
+        &__card-icon--play {
+            inline-size: rem(79);
+            block-size: rem(80);
+            margin-inline-end: 17px;
+            margin-block-start: -7px;
+        }
+    
+        &__card-icon--study {
+            inline-size: rem(79);
+            block-size: rem(79);
+            margin-inline-end: 17px;
+            margin-block-start: -6px;
+        }
+    
+        &__card-icon--exercise {
+            inline-size: rem(81);
+            block-size: rem(55);
+            margin-inline-end: 17px;
+        }
+    
+        &__card-icon--social {
+            inline-size: rem(75);
+            block-size: rem(100);
+            margin-inline-end: 17px;
+            margin-block-start: -15px;
+        }
+        
+        &__card-icon--self-care {
+            inline-size: rem(67);
+            block-size: rem(67);
+            margin-inline-end: 17px;
+            margin-block-start: -11px;
+        }
+
+        &__card-content {
+            row-gap: 24px;
+            block-size: rem(199);
+        }
+
+        &__card-option-icon {
+            inline-size: rem(21);
+            block-size: rem(5);
         }
     }
 }
