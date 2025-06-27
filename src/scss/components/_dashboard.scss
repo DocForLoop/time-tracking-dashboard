@@ -3,6 +3,7 @@
 
 .body {
     min-block-size: 100vh;
+    position: relative;
 }
 
 .page-wrapper {
@@ -235,5 +236,31 @@
         font-weight: var(--fw-2);
         color: var(--clr-previous-hrs);
         white-space: nowrap;
+    }
+}
+
+.attribution {
+    position: absolute;
+    inset-block-end: 10px;
+    inset-inline: 0;
+    font-size: 12px;
+    text-align: center;
+    color: var(--clr-light);
+}
+
+.attribution__link {
+    border-radius: 3px;
+    color: var(--clr-light);
+    text-decoration: underline;
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus-visible {
+        color: var(--clr-work);
+    }
+
+    &:focus-visible {
+        outline: 3px solid var(--clr-light);
+        outline-offset: 2px;
     }
 }
